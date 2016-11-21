@@ -1,0 +1,2273 @@
+/********************************************************************************************************************************************************
+Name: Parque Satélite
+Version: 1.0
+Author: Sandra Bermudez @ bulabe.com
+URL: http://www.
+/*******************************************************************************************************************************************************/
+
+*, html, body, div, span, h1, h2, h3, h4, h5, h6, p, img, strong, dl, dt, dd, ol, ul, li, fieldset, form, label, table, caption, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+/********************************************************************************************************************************************************
+COLOR GUIDE
+
+Blanco #fff
+Negro #1a1a1a
+Dark Green #033309
+Clear Green #55ad50
+
+/********************************************************************************************************************************************************/
+
+/********************************************************************************************************************************************************
+BASICS: TAGS
+/********************************************************************************************************************************************************/
+
+body {
+	background-color: #fff;
+	color: #1a1a1a;
+	font-family: 'Quattrocento Sans', sans-serif;
+	font-weight: 400;
+	text-align: center;
+	overflow-x: hidden;
+}
+
+h1, h2, h3 {	
+	font-weight: 400;
+}
+
+h1 {
+	font-family: 'Quattrocento', serif;
+	font-size: 26px;
+	line-height: 22px;
+	text-transform: uppercase;
+	color: #033309;
+}
+
+h2 {
+	font-family: 'Quattrocento Sans', serif;
+	color: #033309;
+}
+
+h3 {
+	display: block;
+	color: #666;
+	border-top: 1px solid #666;
+	margin: 20px 0 0 0;
+	padding-top: 10px;
+	font-size: 18px;
+}
+
+p {
+	font-size: 14px;
+	line-height: 19px;
+	text-align: justify;
+	margin-bottom: 14px;
+}
+
+ul {
+	list-style-type: disc;
+	list-style-position: inside;
+}
+
+a:link, a:visited, a:active {
+	text-decoration: none;
+	color: #033309;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #008844;
+	-webkit-transition: color 0.2s linear 0s;
+	-moz-transition: color 0.2s linear 0s;
+	-o-transition: color 0.2s linear 0s;			
+	transition: color 0.2s linear 0s;	
+}
+
+a:link img, a:visited img, a:active img, a:hover img { 
+	border: none;
+	background-color: transparent;
+}
+
+::selection,
+::-moz-selection {
+	background: #004812;
+	color: #fff;
+}
+
+strong {
+	font-weight: 700;
+}
+
+sup {
+	font-size: 80%;
+}
+
+/********************************************************************************************************************************************************
+LAYOUT
+/*******************************************************************************************************************************************************/
+
+div.wrapper {
+	width: 950px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+div.extended {
+	width: 1020px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+.floatl {
+	float: left;
+}
+
+.floatr {
+	float: right;
+}
+
+.clearfix {
+	clear: both;
+}
+
+body#verde {
+	background-color: #419e37;
+}
+
+body#gray,
+div#gris {
+	background-color: #dadada;
+}
+
+body#gris,
+div#gris_claro {
+	background-color: #eee;
+}
+
+div#subnav {
+	width: 990px;
+	margin: 0px auto 10px auto;
+	text-align: left;
+	padding: 20px 0;	
+}
+
+div#video {
+	width: 720px;
+	margin: 30px auto 30px auto;
+}
+
+
+
+
+
+
+
+
+
+
+/********************************************************************************************************************************************************
+HEADER
+/*******************************************************************************************************************************************************/
+
+div#header {
+	width: 100%;
+	height: 75px;
+	padding: 15px 0 20px 0;
+	background-color: #fff;
+	/*position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;*/
+}
+
+a#logo:link, 
+a#logo:visited, 
+a#logo:active,
+a#logo:hover {
+	display: block;
+	width: 268px;
+	height: 56px;
+	background-image: url('images/Parque_Satelite_logo.gif');
+	overflow: hidden;
+	text-indent: 130%;
+	margin: 25px 0 0 0;
+	float: left;
+}
+
+a#top:link,
+a#top:visited,
+a#top:active {
+	display: block;
+	width: 38px;
+	height: 18px;
+	overflow: hidden;
+	text-indent: 200px;
+	background-image: url('images/a_top.png');
+	background-position: 0 0;
+	margin: 20px auto 0 auto;
+}
+
+a#top:hover {
+	background-position: 0 -22px;
+}
+
+a#cerrar:link,
+a#cerrar:visited,
+a#cerrar:active {
+	display: block;
+	width: 20px;
+	height: 20px;
+	overflow: hidden;
+	font-size: 11px;
+	text-align: center;
+	line-height: 20px;
+	background-color: #033309;
+	color: #fff;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	border-radius: 16px;
+}
+
+a#cerrar:hover {
+	background-color: #dadada;
+	color: #000;
+}
+
+
+
+/********************************************************************************************************************************************************
+NAV
+/*******************************************************************************************************************************************************/
+
+ul#menu {
+	list-style-type: none;
+	width: 740px;
+	margin-top: 28px;
+	margin: 50px 0 0 0;
+	float: right;
+	position: relative;
+}
+
+ul#menu li {
+	display: inline;
+}
+
+ul#menu li a:link, 
+ul#menu li a:visited, 
+ul#menu li a:active {
+	display: inline;
+	font-size: 16px;
+	text-transform: uppercase;
+	text-decoration: none;
+	margin-left: 20px;
+	float: left;
+	height: 60px;
+}
+
+ul#menu li:first-child a:link, 
+ul#menu li:first-child a:visited, 
+ul#menu li:first-child a:active {
+	margin: 0;
+}
+
+ul#menu li a:hover {
+	
+}
+
+ul#menu li a.selected:link, 
+ul#menu li a.selected:visited, 
+ul#menu li a.selected:active {
+	font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/***************
+NAV - DROPDOWN */
+
+ul#social {
+	list-style-type: none;
+	width: 490px;
+	position: absolute;
+	z-index: 1010;
+	top: 0;
+	right: 300px;
+	padding: 5px 10px 0 10px;
+}
+
+ul#social li {
+	display: inline;
+	
+}
+
+ul#social li a:link, 
+ul#social li a:visited, 
+ul#social li a:active {
+	display: inline;
+	color: #15871e;
+	font-size: 16px;
+	font-weight: 400;
+	margin: 10px 0;
+	border-left: 1px solid #fff;
+	padding: 0 12px;
+	float: left;
+	border-right: 1px solid #15871e;
+}
+
+ul#social li:first-child a:link, 
+ul#social li:first-child a:visited, 
+ul#social li:first-child a:active {
+	border-left: none;
+}
+
+ul#social li a:hover {
+	color: #b6d444;
+	-webkit-transition: color 0.2s linear 0s;
+	-moz-transition: color 0.2s linear 0s;
+	-o-transition: color 0.2s linear 0s;			
+	transition: color 0.2s linear 0s;
+}
+
+
+#call-to-call {
+	position: absolute;
+	top: 0;
+	right: 10;
+	padding: 15px 20px 0 20px;
+	z-index: 1011;
+	background-color: #15871e;
+	border-radius: 0 0 12px 12px;
+}
+
+#call-to-call p {
+	color: #fff;
+	font-size: 18px;
+	font-weight: 700;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+/********************************************************************************************************************************************************
+HEADER - RESPONSIVE */
+
+/* IPAD */
+
+@media screen and (max-width: 980px) {
+	
+	div.wrapper {
+		width: 880px;
+	}
+	
+	div.extended {
+		width: 650px;
+	}
+
+	div#header {
+		height: 85px;
+		padding: 10px 0 20px 0;
+	}
+	
+	a#logo:link, 
+	a#logo:visited, 
+	a#logo:active,
+	a#logo:hover {
+		margin: 0 auto;
+		float: none;
+	}
+
+	ul#menu {
+		width: 680px;
+		margin: 20px auto 0 auto;
+		float: none;
+	}
+	
+	ul#social {
+		width: 100%;
+		border-radius: 0;
+		top: 115px;
+		left: 0;
+		padding: 0 0;
+		background-color: #fff;
+	}
+	
+	ul#social li:first-child a:link, 
+	ul#social li:first-child a:visited, 
+	ul#social li:first-child a:active {
+		margin-left: 80px;
+	}
+	
+	#call-to-call {
+		width: 100%;
+		position: absolute;
+		top: 150px;
+		right: 0;
+		padding: 15px 0 0 0;
+		z-index: 1011;
+	}
+
+}
+
+/* IPHONE */
+
+@media screen and (max-width: 840px) {
+	
+	div.wrapper,
+	div.extended {
+		width: 450px;
+	}
+
+	div#header {
+		height: 250px;
+		padding: 0 0 0 0;
+		position: static;
+	}
+	
+	a#logo:link, 
+	a#logo:visited, 
+	a#logo:active,
+	a#logo:hover {
+		margin: 0 0 0 0px;
+		float: none;
+	}
+
+	ul#menu {
+		width: 400px;
+		margin: 20px 0 0 0;
+		float: none;
+	}
+
+	ul#menu li a:link, 
+	ul#menu li a:visited, 
+	ul#menu li a:active,
+	ul#menu li:first-child a:link, 
+	ul#menu li:first-child a:visited, 
+	ul#menu li:first-child a:active {
+		display: block;
+		height: 25px;
+		margin-left: 0;
+		margin-bottom: 3px;
+		float: none;
+	}
+	
+	ul#social {
+		width: 100%;
+		border-radius: 0;
+		top: 250px;
+		left: 0;
+		padding: 0 0;
+		position: static;
+	}
+	
+	ul#social li:first-child a:link, 
+	ul#social li:first-child a:visited, 
+	ul#social li:first-child a:active {
+		margin-left: 0px;
+		padding-left: 0;
+	}
+
+	ul#social li a:link, 
+	ul#social li a:visited, 
+	ul#social li a:active {
+		font-size: 16px;
+		margin: 10px 0;
+		padding: 0 8px;
+	}
+	
+	#call-to-call {
+		top: 300px;
+	}	
+
+}
+
+
+
+
+/********************************************************************************************************************************************************
+SLIDER
+********************************************************************************************************************************************************/
+
+div.slider {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	top: 0;
+	left: 0;
+	min-height: 300px;
+}
+
+div.preloader {
+	width: 40px;
+	height: 40px;
+	background-image: url('images/_slider_preloader.gif');
+	position: absolute;
+	top: 50px;
+	left: 50%;
+	margin: 0 0 0 -10px;
+	z-index: 300;
+}
+
+div.images {
+	width: 600%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+div.images img {
+	float: left;
+}
+
+a.next:link, a.next:visited, a.next:active,
+a.prev:link, a.prev:visited, a.prev:active {
+	width: 40px;
+	height: 38px;
+	background-image: url('images/_slider_next.png');
+	text-indent: 120%;
+	overflow: hidden;
+	position: absolute;
+	right: 30px;
+	top: 47%;
+	z-index: 301;
+}
+
+a.prev:link, a.prev:visited, a.prev:active {
+	background-image: url('images/_slider_prev.png');
+	left: 30px;
+}
+
+a.next:hover,
+a.prev:hover {
+
+}
+
+a#bottom:link,
+a#bottom:visited,
+a#bottom:active {
+	display: block;
+	width: 38px;
+	height: 40px;
+	overflow: hidden;
+	text-indent: 200px;
+	background-image: url('images/a_bottom.png');
+	position: absolute;
+	left: 50%;
+	bottom: 20px;
+	margin: 0 0 0 -20px;
+}
+
+/********************************************************************************************************************************************************
+SLOGAN */
+
+div#slogan {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-image: url('images/opacitydark.png');
+}
+
+div.copy {
+	position: absolute;
+	width: 350px;
+	height: 190px;
+	top: 50%;
+	left: 50%;
+	margin: -100px 0 0 -175px;
+}
+
+div#slogan div.copy h1 {
+	color: #202020;
+	font-size: 58px;
+	font-weight: 400;
+	letter-spacing: -3px;
+	line-height: 46px;
+}
+
+div#slogan div.copy h2 {
+	color: #202020;
+	font-size: 38px;
+	letter-spacing: -2px;
+	line-height: 36px;
+}
+
+div#form-home {
+	padding: 10px 0 10px 20px;
+	background-image: url('images/opacitydark.png');
+	left: 20px;
+	bottom: 0;
+	position: absolute;
+	border-radius: 12px 12px 0 0;
+}
+
+div#form-home #myform label {
+	color: #fff;
+	font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+div#badgeA {
+	width: 100%;
+	height: 41px;
+	padding: 8px 0 0 0;
+	background-image: url('images/bgd_blend.png');
+	background-repeat: repeat-x;
+	box-shadow: 1px 1px 2px #999;
+}
+
+div#badgeA h1 {
+	display: block;
+	height: 32px;
+	width: 460px;
+	margin: 0 auto;
+	background-image: url('images/bgd_hoja.png');
+	background-repeat: no-repeat;
+	padding: 8px 0 0 38px;
+	text-align: left;
+}
+
+div#badgeB {
+	width: 170px;
+	height: 138px;
+	padding: 72px 20px 0 20px;
+	background-image: url('images/Parque_Satelite_badgett.png');
+	text-align: center;
+	position: absolute;
+	top: 210px;
+	right: 50px;
+	font-family: 'Quattrocento', serif;
+	font-size: 22px;
+}
+
+div#badgeC {
+	width: 504px;
+	height: 154px;
+	background-image: url('images/Parque_Satelite_badget_C.png');
+	text-indent: 600px;
+	overflow: hidden;
+	position: absolute;
+	bottom: 20px;
+	left: 0;
+}
+
+div#badgeProm {
+	width: 100%;
+	height: 37px;
+	padding: 12px 0 0 0;
+	background-image: url('images/bgd_blend.png');
+	background-repeat: repeat-x;
+	box-shadow: 1px 1px 2px #999;
+	position: absolute;
+	top: 110px;
+	left: 0;
+	z-index: 998;
+}
+
+
+div#badgeD {
+	width: 472px;
+	height: 128px;
+	background-image: url('images/Parque_Satelite_badget_D.png');
+	text-indent: 600px;
+	overflow: hidden;
+	position: absolute;
+	top: 30px;
+	left: 30px;
+}
+
+/*
+div#badgeE {
+	width: 380px;
+	height: 100px;
+	padding: 30px 0 0 130px;
+	background-color: #bed745;
+	background-image: url('images/buenfin.png');
+	background-repeat: no-repeat;
+	background-position: 10px;
+	text-align: center;
+	position: absolute;
+	bottom: 30px;
+	right: 0px;
+	font-family: 'Quattrocento', serif;
+	font-size: 20px;
+}
+*/
+
+div#badgeE {
+	width: 180px;
+	height: 190px;
+	background-image: url('images/Parque_Satelite_badget.png');
+	background-repeat: no-repeat;
+	text-overflow: hidden;
+	text-indent:120%;
+	position: absolute;
+	top: 20px;
+	right: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********************************************************************************************************************************************************
+SLIDER - RESPONSIVE */
+
+/* IPHONE */
+
+@media screen and (max-width: 840px) {
+	
+	div.slider {
+		min-height: 0;
+		margin-top: 0px;
+	}
+	
+	div.copy {
+		width: 260px;
+		height: 140px;
+		margin: -70px 0 0 -130px;
+	}
+
+	div#slogan div.copy h1 {
+		font-size: 42px;
+		line-height: 36px;
+	}
+
+	div#slogan div.copy h2 {
+		font-size: 26px;
+		line-height: 29px;
+		letter-spacing: -1px;
+	}
+	
+	a.next:link, a.next:visited, a.next:active,
+	a.prev:link, a.prev:visited, a.prev:active {
+		right: 10px;
+		top: 35%;
+	}
+	
+	a.prev:link, a.prev:visited, a.prev:active {
+		left: 10px;
+	}
+	
+	div#video {
+		margin: 0px auto 0px auto;
+	}
+	
+	div#badgeB {
+		display: none;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+/********************************************************************************************************************************************************
+FOOTER
+********************************************************************************************************************************************************/
+
+div#footer {
+	width: 100%;
+	clear: both;
+	padding: 30px 0;
+	background-color: #033309;
+}
+
+div#footer p {
+	color: #fff;
+	font-size: 14px;
+	text-align: center;
+	line-height: 18px;
+	margin-bottom: 0;
+}
+
+div#footer #gwep {
+	width: 320px;
+	margin: 0 auto;
+}
+
+div#footer #gwep img {
+	margin: 10px;
+	float: left;
+}
+
+div#footer a:link, div#footer a:visited, div#footer a:active {
+	color: #fff;
+}
+
+div#footer a:hover {
+	color: #b6d444;
+	-webkit-transition: color 0.2s linear 0s;
+	-moz-transition: color 0.2s linear 0s;
+	-o-transition: color 0.2s linear 0s;			
+	transition: color 0.2s linear 0s;
+}
+
+
+
+
+/********************************************************************************************************************************************************
+/* DEPARTAMENTOS
+********************************************************************************************************************************************************/
+
+#planta {
+	width: 960px;
+	margin: 0px auto 0 auto;
+	background-image: url('images/Parque_Satelite_deptos_home.jpg');
+	background-repeat: no-repeat;
+	background-position: 40px 0px;
+	min-height: 730px;
+}
+
+#planta h1 {
+	text-align: left;
+}
+
+#planta p {
+	margin: 20px 0 0 0;
+}
+
+#planta img {
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a#personaliza:link, a#personaliza:visited, a#personaliza:active {
+	display: block;
+	width: 180px;
+	height: 55px;
+	padding: 8px 10px 0 10px;
+	
+	background-image: url('images/bgd_blend2.png');
+	background-repeat: repeat-x;
+	box-shadow: 1px 1px 2px #999;
+	border-radius: 8px;
+	float: right;
+
+}
+
+a#personaliza:hover {
+	background: #84bb3e;
+}
+
+a#personaliza h1 {
+	display: block;
+	height: 32px;
+	width: 120px;
+	background-image: url('images/bgd_hoja.png');
+	background-repeat: no-repeat;
+	padding: 3px 0 0 32px;
+	font-size: 21px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+div.prima {
+	width: 615px;
+	margin: 20px 0 60px 0;
+	float: left;
+}
+
+
+div.ficha {
+	width: 280px;
+	float: right;
+}
+
+div.ficha h1 {
+	margin: 0 0 10px 0;
+}
+
+div.ficha h2 {
+	font-weight: 700;
+}
+
+div.ficha ul {
+	margin: 20px 0;
+}
+
+div.ficha li {
+	margin: 5px 0;
+}
+
+div.ficha img {
+	margin: 0 0 40px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+div#recamaras {
+	width: 100%;
+	padding: 10px 0 110px 0;
+	background-color: #fff;
+	
+}
+
+div#recamaras h2 {
+	font-size: 21px;
+	font-weight: 700;
+	text-align: center;
+	margin: 10px 0 30px 0;
+}
+
+
+ul#submen2 {
+	list-style-type: none;
+	position: relative;
+	width: 675px;
+	margin: 0 auto;
+}
+
+ul#submen2 li {
+	position: relative;	
+	line-height: 40px;
+	float: left;	
+}
+
+
+ul#submen2 li a {
+	position: relative;
+	display: block;
+	width: 180px;
+	height: 40px;
+	margin: 0 20px;
+	
+	background-color: #d3d3d3;
+	color: #2c2c2c;
+	font-size: 14px;
+	font-weight: 700;
+	text-align: center;
+	
+	
+	text-decoration: none;
+	padding: 0 0px;
+	
+	background-color: #e6e6e7;
+	border-top: 1px solid #b8b8b8;
+	border-bottom: 1px solid #b8b8b8;
+	border-right: 1px solid #b8b8b8;
+	border-left: 1px solid #b8b8b8;
+	
+	box-shadow: 1px 1px 2px #b8b8b8;
+}
+
+
+ul#submen2 li a:hover {
+	color: #fff;
+	background-color: #adadad;
+}
+
+/*
+ul#submen2 li .subdropdown li:last-child a#especial {
+	width: 160px;
+	line-height: 18px;
+	padding: 20px 10px;
+	
+}
+*/
+
+
+
+
+
+/********************************************************************************************************************************************************
+DEPTOS - RESPONSIVE */
+
+/* IPAD */
+
+@media screen and (max-width: 980px) {	
+	
+	div.prima {
+		float: none;
+		margin: 0 auto 20px auto;
+	}
+	
+	div.ficha {
+		width: 600px;
+		float: none;
+		margin: 10px auto;
+		padding: 0;
+	
+	}
+	
+	.mb60 {
+		margin-bottom: 0;
+	}
+	
+	div.ficha img {
+		float: none;	
+	}
+	
+	
+
+
+
+}
+
+/* IPHONE */
+
+@media screen and (max-width: 840px) {
+	
+	ul#submen2 {
+		width: 480px;
+	}
+	
+	ul#submen2 li a {
+		width: 130px;
+		margin: 0 5px;
+	}
+	
+	div.prima img {
+
+		width: 480px;
+		
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********************************************************************************************************************************************************
+/* AMENITIES
+********************************************************************************************************************************************************/
+
+div#amenities {
+	background-image: url('images/amenities.jpg');
+	background-repeat: no-repeat;
+	background-position: 0 10px;
+	width: 960px;
+	height: 650px;
+	overflow: hidden;
+	position: relative;
+	margin: 70px 0 0px 0;
+}
+
+div#amenities_desc {
+	width: 320px;
+	float: right;
+	margin: 0px 20px 0 0;
+}
+
+ul#spaces {
+	list-style-type: none;
+}
+
+ul#spaces li a:link,
+ul#spaces li a:visited,
+ul#spaces li a:active {
+	position: absolute;
+	font-size: 14px;
+}
+
+ul#spaces li h2 {
+	color: #008844;
+	font-size: 16px;
+	margin-bottom: 3px;
+}
+
+ul#spaces li a#a1 {
+	top: 115px;
+	left: 40px;
+}
+
+ul#spaces li a#a2 {
+	top: 290px;
+	left: 35px;
+}
+
+ul#spaces li a#a3 {
+	top: 420px;
+	left: 35px;
+}
+
+ul#spaces li a#a4 {
+	top: 188px;
+	left: 595px;
+}
+
+ul#spaces li a#a5 {
+	top: 230px;
+	left: 820px;
+}
+
+ul#spaces li a#a6 {
+	top: 330px;
+	left: 35px;
+}
+
+a.lAM:link, a.lAM:visited, a.lAM:active {
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+a.lAM:hover {
+
+}
+
+
+
+
+
+
+div.wrapperAmen {
+	width: 950px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+div.captAmen {
+	width: 270px;
+	margin: 290px 0 0 0;
+	float: left;
+}
+
+div.imgAmen {
+	width: 640px;
+	float: right;
+}
+
+
+
+
+
+/********************************************************************************************************************************************************
+AMENITIES - RESPONSIVE */
+
+/* IPAD */
+
+@media screen and (max-width: 980px) {	
+	div#amenities {
+		margin: 125px 0 0px 0;
+	}
+		
+	div#amenities_desc {
+		margin: 0px 70px 0 0;
+	}
+	
+	ul#spaces li a#a1,
+	ul#spaces li a#a2,
+	ul#spaces li a#a3,
+	ul#spaces li a#a6 {
+		left: 25px;
+	}	
+	
+	div.wrapperAmen {
+		width: 840px;
+		margin: 0 auto;
+		text-align: left;
+	}
+	
+	div.captAmen {
+		width: 270px;
+		margin: 260px 0 0 0;
+	}
+
+	div.imgAmen {
+		width: 540px;
+		overflow: hidden;
+	}
+
+}
+
+/* IPHONE */
+
+@media screen and (max-width: 840px) {
+	
+	div#amenities {
+		background-image: url('images/amenities_mini.jpg');
+		background-position: 0 140px;
+		width: 500px;
+		height: 510px;
+		position: relative;
+		margin: 0px 0 0px 0;
+	}
+
+	div#amenities_desc {
+		display: block;
+		width: 100%;
+		float: none;
+		clear: both;
+		margin: 15px 0 0 0;
+	}
+	
+	ul#spaces li a {
+		background-color: #dadada;
+	}
+	
+	ul#spaces li a#a1 {
+		top: 170px;
+		left: 20px;
+	}
+
+	ul#spaces li a#a2 {
+		top: 260px;
+		left: 10px;
+	}
+
+	ul#spaces li a#a3 {
+		top: 330px;
+		left: 20px;
+	}
+
+	ul#spaces li a#a4 {
+		top: 210px;
+		left: 300px;
+	}
+
+	ul#spaces li a#a5 {
+		top: 220px;
+		left: 410px;
+	}
+
+	ul#spaces li a#a6 {
+		top: 300px;
+		left: 10px;
+	}
+	
+	#gris_claro {
+		padding: 20px 0;
+		
+	}
+	
+	div.captAmen {
+		width: 480px;
+		margin: 10px auto 20px auto;
+		float: none;
+	}
+
+	div.imgAmen {
+		width: 640px;
+		float: none;
+		margin: 0 auto;
+	}
+	
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bgPlanta {
+	min-height: 700px;
+	background-image: url('images/depto_planta_B.gif');
+	background-repeat: no-repeat;
+	background-position: 400px 93px;
+}
+
+
+
+/********************************************************************************************************************************************************
+- SUB MENU
+********************************************************************************************************************************************************/
+
+ul#submen {
+	list-style-type: none;
+	position: relative;	
+}
+
+ul#submen li {
+	position: relative;	
+	line-height: 40px;
+	float: left;	
+}
+
+ul#submen li {
+	display: inline;
+}
+
+ul#submen li a {
+	position: relative;
+	display: block;
+	width: 180px;
+	height: 40px;
+	
+	background-color: #d3d3d3;
+	color: #2c2c2c;
+	font-size: 14px;
+	font-weight: 700;
+	text-align: center;
+	
+	
+	text-decoration: none;
+	padding: 0 0px;
+	
+	background-color: #e6e6e7;
+	border-top: 1px solid #b8b8b8;
+	border-bottom: 1px solid #b8b8b8;
+	border-right: 1px solid #b8b8b8;
+	border-left: 1px solid #b8b8b8;
+	
+	box-shadow: 1px 1px 2px #b8b8b8;
+}
+
+
+ul#submen li a:hover {
+	color: #fff;
+	background-color: #adadad;
+}
+
+
+ul#submen li a#activo {
+	border-left: none;
+	padding: 0 20px;
+	background-color: #033309;
+	color: #fff;
+}
+
+
+
+
+.subdropdown {
+	margin: 0;
+	padding: 0;
+	display: block;
+	position: absolute;
+	z-index: 999;
+	top: 100%;
+	width: 250px;
+	display: none;
+	left: 0;
+}
+
+.subdropdown li {
+	margin: 0;
+	padding: 0;
+	float: none;
+	clear: both;
+	position: relative;
+	list-style: none;
+	display: block;
+}
+
+.subdropdown li a {
+	display: block;
+}
+
+ul#submen li .subdropdown li a {
+	width: 160px;
+	height: 60px;
+	padding: 0 10px;
+	line-height: 60px;
+	
+	border-top: none;
+}
+
+ul#submen li .subdropdown li a.activo {
+	background-color: #033309;
+	color: #fff;
+
+}
+
+
+ul#submen li .subdropdown li:last-child a {
+	width: 160px;
+	line-height: 18px;
+	padding: 20px 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********************************************************************************************************************************************************
+ - RESPONSIVE */
+
+/* IPAD */
+
+@media screen and (max-width: 980px) {
+	
+	div#subnav {
+		width: 630px;
+		margin: 150px auto 10px auto;
+	}
+
+	ul#submen li a:link, 
+	ul#submen li a:visited, 
+	ul#submen li a:active,
+	ul#submen li a.activo:link, 
+	ul#submen li a.activo:visited, 
+	ul#submen li a.activo:active {	
+		margin: 0 6px 6px 0;
+	}
+}
+
+/* IPHONE */
+
+@media screen and (max-width: 840px) {
+
+	div#subnav {
+		width: 480px;
+		margin: 20px auto 10px auto;
+	}	
+
+	ul#submen li a:link, 
+	ul#submen li a:visited, 
+	ul#submen li a:active,
+	ul#submen li a.activo:link, 
+	ul#submen li a.activo:visited, 
+	ul#submen li a.activo:active {	
+		display: block;
+		width: 130px;
+		padding: 0 0px;
+		margin-bottom: 3px;
+		border: 1px solid #b8b8b8;
+		float: none;
+	}	
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 980px) {
+
+	#planta {
+		width: 650px;
+		background-image: url('images/Parque_Satelite_deptos_home_mini.jpg');
+		background-position: 0 50px;
+		min-height: 610px;
+	}
+	
+	ul#submen li a {
+		width: 140px;
+		font-size: 13px;
+	}
+	
+	a#personaliza:link, a#personaliza:visited, a#personaliza:active {
+		float: left;
+		
+		margin: 10px 0 0 0;
+	}
+}
+
+
+
+/* IPHONE */
+
+@media screen and (max-width: 840px) {	
+
+	#planta {
+		width: 520px;
+	}
+	
+	a#personaliza:link, a#personaliza:visited, a#personaliza:active {
+		float: right;
+		margin: 20px 0 0 0;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+/********************************************************************************************************************************************************
+- UBICACION
+********************************************************************************************************************************************************/
+
+div#mapa {
+	width: 920px;
+	margin: 0 auto 20px auto;
+	padding: 0;
+	text-align: center;
+}
+
+div#mapa h1 {
+	margin: 0 0 20px 0;
+}
+
+div#mapa p {
+	text-align: center;
+	margin-bottom: 0;
+}
+
+div#mapa iframe {
+	margin: 20px auto 30px auto;
+}
+
+/********************************************************************************************************************************************************
+UBICACION - RESPONSIVE */
+
+/* IPAD */
+
+@media screen and (max-width: 980px) {
+	div#mapa {
+		margin-top: 150px;
+	}
+}
+
+/* IPHONE */
+
+@media screen and (max-width: 840px) {	
+	div#mapa {
+		width: 600px;
+		padding: 0px 0 30px 0;
+		margin: 300px auto 0 auto;
+	}
+
+	div#mapa h1 {
+		margin: 0 0 20px 0;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********************************************************************************************************************************************************
+- CONTACTO 
+********************************************************************************************************************************************************/
+
+
+div.bgBoceto {
+	background-image: url('images/parque_satelite_boceto.gif');
+	background-repeat: no-repeat;
+	background-position: right top;
+	min-height: 430px;
+}
+
+div#thx {
+	width: 380px;
+}
+
+form#myform {
+	text-align: left;
+	margin: 20px 0 40px 0;
+}
+
+form#myform label {
+	display: block;
+	font-family: 'Quattrocento Sans', sans-serif;
+	font-size: 14px;
+	margin: 15px 0;
+}
+
+form#myform input, form#myform textarea {
+	background-color: #dee6e2;
+	font-family: 'Quattrocento Sans', sans-serif;
+	font-size: 14px;
+	padding: 6px;
+	color: #000;
+	width: 350px;
+	border-radius: 5px 5px;
+}
+
+form#myform textarea {
+	height: 120px;
+}
+
+form#myform span#adv_n,
+form#myform span#adv_c,
+form#myform span#adv_m {
+	font-family: 'Quattrocento Sans', sans-serif;
+	color: red;
+}
+
+form#myform input#submit {
+	display: block;
+	width: 120px;
+	color: #000;
+	font-family: 'Quattrocento Sans', sans-serif;
+	margin: 20px 10px 20px 0;
+}
+
+form#myform input:focus, 
+form#myform textarea:focus,
+form#myform input#submit:hover {
+	background-color: #033309;
+ 	color: #fff;
+}
+
+div#thx h1 {
+	font-family: 'Quattrocento', serif;
+	font-size: 22px;
+	line-height: 26px;
+	color: #033309;
+}
+
+div#thx a:link, div#thx a:visited, div#thx a:active {
+	color: #fff;
+	margin: 8px 0;
+}
+
+div#thx a:hover {
+	
+}
+
+
+
+
+/********************************************************************************************************************************************************
+CONTACTO - RESPONSIVE */
+
+/* IPAD */
+
+@media screen and (max-width: 980px) {
+	
+}
+
+/* IPHONE */
+
+@media screen and (max-width: 840px) {	
+	div#thx {
+		margin: 0 0;
+	}		
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*********************************************************************************
+CLASES
+/********************************************************************************/
+
+.PR {
+	position: relative;
+}
+
+span.copy {
+	color: #033309;
+	font-family: 'Quattrocento Sans', serif;
+	font-size: 24px;
+	font-weight: 400;
+	text-transform: none;
+}
+
+.p20 {
+	padding: 30px 0 10px 0;
+}
+
+.p30 {
+	padding: 30px 0;
+}
+
+.p60 {
+	padding: 60px 0;
+}
+
+.w225 {
+	width: 225px;
+}
+
+.w250 {
+	width: 250px;
+}
+
+.w270 {
+	width: 255px;
+}
+
+.w280 {
+	width: 280px;
+}
+
+.w305 {
+	width: 305px;
+}
+
+.w320 {
+	width: 320px;
+}
+
+.w370 {
+	width: 370px;
+}
+
+.w405 {
+	width: 405px;
+}
+
+.w450 {
+	width: 450px;
+}
+
+.w640 {
+	width: 640px;
+}
+
+.h70 {
+	height: 70px;
+}
+
+.mt8 {
+	margin-top: 8px;
+}
+
+.mt10 {
+	margin-top: 10px;
+}
+
+.mt15 {
+	margin-top: 15px;
+}
+
+.mt20 {
+	margin-top: 20px;
+}
+
+.mt30 {
+	margin-top: 30px;
+}
+
+.mt80 {
+	margin-top: 80px;
+}
+
+.mt90 {
+	margin-top: 90px;
+}
+
+.mt110 {
+	margin-top: 110px;
+}
+
+.mt120 {
+	margin-top: 120px;
+}
+
+.mt220 {
+	margin-top: 220px;
+}
+
+.mt250 {
+	margin-top: 250px;
+}
+
+.mt240 {
+	margin-top: 240px;
+}
+
+.mt290 {
+	margin-top: 270px;
+}
+
+.mt300 {
+	margin-top: 300px;
+}
+
+.mr5 {
+	margin-right: 5px;
+}
+
+.mr30 {
+	margin-right: 30px;
+}
+
+.mb10 {
+	margin-bottom: 10px;
+}
+
+.mb20 {
+	margin-bottom: 20px;
+}
+
+.mb30 {
+	margin-bottom: 30px;
+}
+
+.mb50 {
+	margin-bottom: 50px;
+}
+
+.mb60 {
+	margin-bottom: 60px;
+}
+
+.ml12 {
+	margin-left: 12px;
+}
+
+.ml50 {
+	margin-left: 50px;
+}
+
+.ml90 {
+	margin-left: 90px;
+}
+
+
+
+/********************************************************************************************************************************************************
+CLASES - RESPONSIVE */
+
+/* IPAD */
+
+@media screen and (max-width: 980px) {
+
+	.ml90 {
+		margin-left: 10px;
+	}
+
+
+}
+
+/* IPHONE */
+
+@media screen and (max-width: 840px) {
+	
+	.floatl, .floatr {
+		float: none;
+		clear: both;
+	}
+	
+	.p30, .p60 {
+		padding: 0;
+	}
+	
+	.ml90 {
+		margin-left: 0;
+	}
+	
+	.mr30 {
+		margin-right: 0;
+	}
+	
+	.w405 {
+		margin-top: 30px;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********************************************************************************************************************************************************
+POP-UP
+/*******************************************************************************************************************************************************/
+
+div#opacidad {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-image: url('images/opacity.png');
+	box-shadow: 6px 6px 6px #000;
+	z-index: 1080;
+}
+
+div#reply {
+	width: 540px;
+	padding: 20px 30px 30px 30px;
+	background-color: #226b17;
+	background-image: url('images/bgd_blend3.png');
+	background-repeat: repeat-x;
+	border-radius: 18px;
+	
+	box-shadow: 0px 3px 9px #2c2c2c;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -300px -270px;
+	
+}
+
+a#saltar:link,
+a#saltar:visited,
+a#saltar:active {
+	display: block;
+	width: 40px;
+	height: 40px;
+	font-size: 18px;
+	text-align: center;
+	line-height: 40px;
+	background-color: #033309;
+	color: #7bbd3c;
+	position: absolute;
+	top: -5px;
+	right: -5px;
+	border-radius: 40px;
+}
+
+a#saltar:hover {
+	background-color: #fff;
+}
+
+div#reply h1 {
+	line-height: 32px;
+}
+
+div#reply p {
+	text-align: center;
+	margin: 0;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+div#reply a#registro:link, 
+div#reply a#registro:visited,
+div#reply a#registro:active {
+	display: block;
+	width: 280px;
+	height: 60px;
+	background-color: #84b74b;
+	background-image: url('images/bgd_registro.png');
+	color: #2e5900;
+	text-shadow: -1px 1px 1px #dcf7bf;
+	font-size: 22px;
+	letter-spacing: 1px;
+	font-weight: 700;
+	text-align: center;
+	line-height: 65px;
+	margin: 10px auto 0 auto;
+	border-radius: 8px;
+	overflow: hidden;
+	background-position: 0 0;
+}
+
+div#reply a#registro:hover {
+	background-image: none;
+	text-decoration: none;
+	color: #2e5900;
+}
+
+
+
+
+
+
+
+form#mypromo {
+	text-align: left;
+	margin: 20px 0 0 0;
+	
+}
+
+form#mypromo label {
+	display: block;
+	font-family: 'Quattrocento Sans', sans-serif;
+	font-size: 14px;
+	margin: 10px 0;
+	color: #e5f3d3;
+}
+
+form#mypromo input {
+	background-color: #e5f3d3;
+	font-family: 'Quattrocento Sans', sans-serif;
+	font-size: 14px;
+	padding: 6px;
+	color: #000;
+	width: 100%;
+	border-radius: 5px 5px;
+}
+
+form#mypromo label.error {
+	font-family: 'Quattrocento Sans', sans-serif;
+	color: #e5f3d3;
+}
+
+form#mypromo input#submit {
+	display: block;
+	width: 110px;
+	height: 40px;
+	background-color: #9ddf46;
+	color: #000;
+	font-family: 'Quattrocento Sans', sans-serif;
+	margin: 20px 10px 20px 0;
+}
+
+form#mypromo input:focus, 
+form#mypromo textarea:focus,
+form#mypromo input#submit:hover {
+	background-color: #033309;
+ 	color: #fff;
+}
+
+form#mypromo p {
+	text-align: left;
+	margin: 10px 0 0 0;
+	color: #e5f3d3;
+}
+
+
+@media screen and (max-width: 700px) {
+div#reply {
+	position: relative;
+	top: 10px;
+	left: 10px;
+	margin: 0 0;
+}
+}
+
+@media screen and (max-height: 660px) {
+div#reply {
+	position: relative;
+	top: 10px;
+	left: 10px;
+	margin: 0 auto;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
